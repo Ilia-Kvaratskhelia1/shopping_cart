@@ -10,7 +10,7 @@ function Shop() {
         <h1>Ilia Shopping</h1>
       </div>
       <div className="products">
-      {PRODUCTS.map(products=>
+      {PRODUCTS.map((products)=>
          <Product data={products}/>
       )}
       </div>

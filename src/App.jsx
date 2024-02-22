@@ -13,8 +13,8 @@ function App() {
   <Router>
     <NavBar/>
     <Routes>
-      <Route path="/" element={<Shoping/>} />
-      <Route path="/cart" element={<Cart/>} />
+      <Route path="/shopping_cart/" element={<Shoping/>} />
+      <Route path="/shopping_cart/cart" element={<Cart/>} />
     </Routes>
   </Router>
     </ShopContextProvider>
