@@ -1,3 +1,4 @@
+import "./Cart.css"
 import React, {useContext} from 'react'
 import { ShopContext } from '../../context/Context'
 function CartItem(props) {
@@ -10,8 +11,7 @@ function CartItem(props) {
         <p>
             <b>{productName}</b>
         </p>
-        <p>{price}</p>
-
+        <p className="price">{price} $</p>
         <div className="countHandler">
             <button onClick={()=> removeCart(id)}>-</button>
             <input type="text" value={cartItems[id]} onChange={(e)=>uptadeCart(Number(e.target.value), id)} />
